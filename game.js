@@ -22,7 +22,7 @@ var buttonColours = ["red", "blue", "green", "yellow"];
       } else {
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Refresh The Page to Restart");
         setTimeout(function () {
           $("body").removeClass("game-over");
         }, 200);
@@ -60,7 +60,7 @@ var buttonColours = ["red", "blue", "green", "yellow"];
       started = false;
     }
 
-    // Memulai permainan dari level 1 tanpa menekan tombol keyboard A
+
     $(document).ready(function() {
       nextSequence();
       started = true;
